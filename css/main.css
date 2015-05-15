@@ -1,0 +1,29 @@
+body {
+	width: 310px;
+	margin: 0 auto;
+}
+
+.input {
+	height: 100px;
+	width: 100px;
+	border: 1px solid;
+	float: left;
+}
+
+#board {
+	width: 310px;
+}
+
+h1 {
+	font-size: 38pt;
+	margin: 5px;
+}
+
+#score {
+	text-align: center;
+}
+
+p {
+	float: left;
+	padding: 5px;
+}

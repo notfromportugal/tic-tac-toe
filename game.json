@@ -1,0 +1,20 @@
+{
+	"gameBoard": [
+		{"cellContent": " ", "cellValue": 0, "taken": false}, 
+		{"cellContent": " ", "cellValue": 0, "taken": false},
+		{"cellContent": " ", "cellValue": 0, "taken": false},
+		{"cellContent": " ", "cellValue": 0, "taken": false},
+		{"cellContent": " ", "cellValue": 0, "taken": false},
+		{"cellContent": " ", "cellValue": 0, "taken": false},
+		{"cellContent": " ", "cellValue": 0, "taken": false},
+		{"cellContent": " ", "cellValue": 0, "taken": false},
+		{"cellContent": " ", "cellValue": 0, "taken": false}
+	],
+	
+	"playerOne": 1,
+	"playerTwo": -1,
+	"playerOneTurn": true,
+	"playerOneWinTotal": 0,
+	"playerTwoWinTotal": 0, 
+	"winner": 0
+}

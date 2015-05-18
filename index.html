@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Tic Tac Toe</title>
-		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 		<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
@@ -12,19 +11,22 @@
 		<script src="js/GameController.js"></script>
 	</head>
 	<body ng-controller="GameController">
-
 		<div>
-			<h1>PLAY NOW!</h1>
-        	<div class="input" ng-click="move($index)" ng-repeat="block in game.board track by $index">
-            	<h3>{{getSymbol($index)}}</h3>
+			<div id="buttons">
+				<button class="myButton" ng-click="clearBoard()">NEW GAME</button>
+				<button class="myButton" ng-click="resetScore()">CLEAR SCORE</button>
+			</div>
+
+        	<div class="input" ng-click="playerMove($index)" ng-repeat="block in game.gameBoard">
+            	<div id="symbol">{{block.cellContent}}</div>
         	</div>
-    	</div>
-    	
 
+    		<h1 ng-show="game.winner === 1">Player One Wins!</h1>
+    		<h1 ng-show="game.winner === -1">Player Two Wins!</h1>
 
-			<div id="score">
-				<p>Your Win Total:__{{yourWins}}<p>
-				<p>Opponent Win Total:__{{oppWins}}</p>
+			<div class="score">
+				<p><em><strong>Player One Win Count:</strong></em> {{game.playerOneWinTotal}}</p>
+				<p><em><strong>Player Two Win Count:</strong></em> {{game.playerTwoWinTotal}}</p>
 			</div>
 		</div>
 	</body>

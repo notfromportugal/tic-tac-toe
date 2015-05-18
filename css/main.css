@@ -16,7 +16,13 @@ body {
 	float: left;
 	border-collapse: collapse;
 	border-radius: 30px;
+	background-color: rgba(100, 255, 0, 0.3);
+}
 
+.input:active{
+	position:relative;
+	top:3px;
+	background-color: rgba(100, 255, 0, 0.8);
 }
 
 #board {
@@ -30,10 +36,16 @@ h1 {
 }
 
 .score {
+	display: inline-block;
+	width: 400px;
+	padding: 3px;
 	font-size: 25px;
 	text-align: center;
 	text-shadow: 1pt 1pt white;
 	text-decoration: underline;
+	border: 1px dashed white;
+	border-radius: 30px;
+	margin-top: 10px;
 }
 
 
